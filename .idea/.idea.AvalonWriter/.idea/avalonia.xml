@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AvaloniaProject">
+    <option name="projectPerEditor">
+      <map>
+        <entry key="AvalonWriter/App.axaml" value="AvalonWriter/AvalonWriter.csproj" />
+        <entry key="AvalonWriter/Views/MainWindow.axaml" value="AvalonWriter/AvalonWriter.csproj" />
+      </map>
+    </option>
+  </component>
+</project>

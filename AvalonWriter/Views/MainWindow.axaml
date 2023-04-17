@@ -7,14 +7,56 @@
         x:Class="AvalonWriter.Views.MainWindow"
         x:DataType="vm:MainWindowViewModel"
         Icon="/Assets/avalonia-logo.ico"
-        Title="AvalonWriter">
+        Title="AvalonWriter"
+        Background="Transparent"
+        TransparencyLevelHint="AcrylicBlur"
+        TransparencyBackgroundFallback="Black"
+        ExtendClientAreaToDecorationsHint="True">
 
     <Design.DataContext>
         <!-- This only sets the DataContext for the previewer in an IDE,
              to set the actual DataContext for runtime, set the DataContext property in code (look at App.axaml.cs) -->
         <vm:MainWindowViewModel/>
     </Design.DataContext>
-
-    <TextBlock Text="{Binding Greeting}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+    
+    <Panel>
+        <ExperimentalAcrylicBorder IsHitTestVisible="False">
+            <ExperimentalAcrylicBorder.Material>
+                <ExperimentalAcrylicMaterial
+                    BackgroundSource="Digger"
+                    TintColor="Black"
+                    TintOpacity="1"
+                    MaterialOpacity="0.65">
+                </ExperimentalAcrylicMaterial>
+            </ExperimentalAcrylicBorder.Material>
+        </ExperimentalAcrylicBorder>
+        
+        <Grid RowDefinitions="32,*,32" ColumnDefinitions="100,*,100">
+            <StackPanel Background="Black" Opacity="0.7" Grid.Row="0" Grid.ColumnSpan="4"></StackPanel>
+            
+            <StackPanel Grid.Row="1" Grid.Column="1" Orientation="Vertical">
+                <TextBlock Text="{Binding Greeting}" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White"/>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                    <Button Command="{Binding DecrementCommand}" Foreground="White" Cursor="Hand" >
+                        <TextBlock Text="{Binding Amount, Mode=OneWay, StringFormat='\- {0}'}" />
+                    </Button>
+                    <TextBlock Text="{Binding Counter}" Foreground="White" VerticalAlignment="Center" Margin="10,0"/>
+                    <Button Command="{Binding IncrementCommand}" Foreground="White" Cursor="Hand">
+                        <TextBlock Text="{Binding Amount, Mode=OneWay, StringFormat='+ {0}'}" />
+                    </Button>
+                </StackPanel>
+                <Slider Minimum="1" Maximum="10" 
+                        Value="{Binding Amount}" 
+                        Cursor="Hand">
+                    <Slider.Styles>
+                        <Style Selector="Thumb">
+                            <Setter Property="ToolTip.Tip" Value="{Binding $parent[Slider].Value, Mode=OneWay, StringFormat={}{0:##}}" />
+                            <Setter Property="ToolTip.Placement" Value="Top" />
+                        </Style>
+                    </Slider.Styles>
+                </Slider>
+            </StackPanel>
+        </Grid>
+    </Panel>
 
 </Window>

@@ -4,7 +4,11 @@
     <option name="projectPerEditor">
       <map>
         <entry key="AvalonWriter/App.axaml" value="AvalonWriter/AvalonWriter.csproj" />
+        <entry key="AvalonWriter/Style.axaml" value="AvalonWriter/AvalonWriter.csproj" />
+        <entry key="AvalonWriter/Views/MainView.axaml" value="AvalonWriter/AvalonWriter.csproj" />
         <entry key="AvalonWriter/Views/MainWindow.axaml" value="AvalonWriter/AvalonWriter.csproj" />
+        <entry key="AvalonWriter/Views/SettingsView.axaml" value="AvalonWriter/AvalonWriter.csproj" />
+        <entry key="AvalonWriter/Views/SettingsWindow.axaml" value="AvalonWriter/AvalonWriter.csproj" />
       </map>
     </option>
   </component>

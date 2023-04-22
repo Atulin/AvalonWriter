@@ -35,13 +35,16 @@
         <Grid RowDefinitions="32,*,32" ColumnDefinitions="100,*,100">
             <StackPanel Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" 
                         Orientation="Horizontal" 
+                        VerticalAlignment="Stretch"
                         Background="Black" 
                         Opacity="0.7" PointerPressed="InputElement_OnPointerPressed">
-                <Button Command="{Binding NewWindowCommand}">S</Button>
-                <Button Command="{Binding MainViewCommand}">Home</Button>
+                <Button Classes="topbar-btn" Command="{Binding NewWindowCommand}">
+                    <PathIcon Height="14" Data="{StaticResource IcoSettingsRegular}" />
+                </Button>
+                <Button Classes="topbar-btn" Command="{Binding MainViewCommand}">Home</Button>
             </StackPanel>
             
-            <Border Grid.Row="1" Grid.Column="1" Child="{Binding Content}" />
+            <Border Grid.Row="1" Grid.Column="1" Padding="5" Child="{Binding Content}" />
         </Grid>
     </Panel>
 

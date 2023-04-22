@@ -12,6 +12,7 @@ public partial class MainWindow : Window
 
     private void InputElement_OnPointerPressed(object? sender, PointerPressedEventArgs e)
     {
+        if (e.Source is not StackPanel) return;
         BeginMoveDrag(e);
     }
 }

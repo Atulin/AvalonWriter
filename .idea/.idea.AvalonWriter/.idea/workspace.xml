@@ -8,19 +8,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a72a95bb-2520-4184-b6ef-22f52a735194" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/AvalonWriter/Style.axaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AvalonWriter/ViewModels/MainViewModel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AvalonWriter/ViewModels/SettingsViewModel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AvalonWriter/Views/MainView.axaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AvalonWriter/Views/MainView.axaml.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AvalonWriter/Views/SettingsView.axaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AvalonWriter/Views/SettingsView.axaml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.AvalonWriter/.idea/avalonia.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AvalonWriter/.idea/avalonia.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.AvalonWriter/.idea/discord.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AvalonWriter/.idea/discord.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AvalonWriter/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AvalonWriter/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AvalonWriter/App.axaml" beforeDir="false" afterPath="$PROJECT_DIR$/AvalonWriter/App.axaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AvalonWriter/ViewLocator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AvalonWriter/ViewLocator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AvalonWriter/ViewModels/MainWindowViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AvalonWriter/ViewModels/MainWindowViewModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AvalonWriter/AvalonWriter.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/AvalonWriter/AvalonWriter.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AvalonWriter/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AvalonWriter/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AvalonWriter/Style.axaml" beforeDir="false" afterPath="$PROJECT_DIR$/AvalonWriter/Style.axaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AvalonWriter/Views/MainWindow.axaml" beforeDir="false" afterPath="$PROJECT_DIR$/AvalonWriter/Views/MainWindow.axaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AvalonWriter/Views/MainWindow.axaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AvalonWriter/Views/MainWindow.axaml.cs" afterDir="false" />
     </list>
@@ -136,6 +127,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/cf6a8d3ef4967a64d9dd2a54553c16c71b2a2fd4a23e55cc5a5c9ff34bbe3da/ToolTip.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/e533e01fd5a637b1dc2d20f0e1363c5e7ac3cbcbbe7ff657cf733e6be9c960/MouseDevice.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/ffb5794dc19ba7c755c2e8c29df9cfdc6b337d79162048cf7eb182bf52a58f58/PointerPoint.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://G:/RiderProjects/AvalonWriter/AvalonWriter/App.axaml" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -202,7 +194,8 @@
       <workItem from="1681943885415" duration="66000" />
       <workItem from="1681943977971" duration="26000" />
       <workItem from="1681944025754" duration="198000" />
-      <workItem from="1682129526455" duration="4820000" />
+      <workItem from="1682129526455" duration="5076000" />
+      <workItem from="1682184930364" duration="3590000" />
     </task>
     <task id="LOCAL-00001" summary="Humble beginnings">
       <created>1681694437742</created>
@@ -211,7 +204,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681694437742</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Tabbed view and draggability">
+      <created>1682134662479</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1682134662479</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -220,7 +220,8 @@
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Humble beginnings" />
-    <option name="LAST_COMMIT_MESSAGE" value="Humble beginnings" />
+    <MESSAGE value="Tabbed view and draggability" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tabbed view and draggability" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>

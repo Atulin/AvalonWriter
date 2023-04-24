@@ -1,5 +1,4 @@
-﻿using System;
-using Avalonia.Controls;
+﻿using Avalonia.Controls;
 using AvalonWriter.Views;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
@@ -17,7 +16,7 @@ public partial class MainWindowViewModel : ViewModelBase
     }
 
     [RelayCommand]
-    private void NewWindow() => Content = new SettingsView();
+    private void SettingsView() => Content = new SettingsView();
 
     [RelayCommand]
     private void MainView() => Content = new MainView();

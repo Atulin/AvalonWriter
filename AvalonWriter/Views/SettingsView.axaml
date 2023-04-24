@@ -6,8 +6,14 @@
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
              x:Class="AvalonWriter.Views.SettingsView"
              x:DataType="viewModels:SettingsViewModel">
+    <Design.DataContext>
+        <viewModels:SettingsViewModel />
+    </Design.DataContext>
+    
     <StackPanel>
-        <TextBlock Text="I've Come to Speak With You Again" />
-        <Button >Home</Button>
+        <Grid ColumnDefinitions="*,5*">
+            <Button Grid.Column="0" Command="{Binding LogCommandCommand}">Click!</Button>
+            <TextBlock Grid.Column="1" Text="{Binding Message}" />
+        </Grid>
     </StackPanel>
 </UserControl>

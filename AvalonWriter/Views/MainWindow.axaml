@@ -3,7 +3,6 @@
         xmlns:vm="using:AvalonWriter.ViewModels"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:views="clr-namespace:AvalonWriter.Views"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="AvalonWriter.Views.MainWindow"
         x:DataType="vm:MainWindowViewModel"
@@ -27,18 +26,17 @@
                     BackgroundSource="Digger"
                     TintColor="Black"
                     TintOpacity="1"
-                    MaterialOpacity="0.65">
-                </ExperimentalAcrylicMaterial>
+                    MaterialOpacity="0.65" />
             </ExperimentalAcrylicBorder.Material>
         </ExperimentalAcrylicBorder>
         
         <Grid RowDefinitions="32,*,32" ColumnDefinitions="100,*,100">
-            <StackPanel Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" 
+            <StackPanel Name="TopBar" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" 
                         Orientation="Horizontal" 
                         VerticalAlignment="Stretch"
                         Background="Black" 
                         Opacity="0.7" PointerPressed="InputElement_OnPointerPressed">
-                <Button Classes="topbar-btn" Command="{Binding NewWindowCommand}">
+                <Button Classes="topbar-btn" Command="{Binding SettingsViewCommand}">
                     <PathIcon Height="14" Data="{StaticResource IcoSettingsRegular}" />
                 </Button>
                 <Button Classes="topbar-btn" Command="{Binding MainViewCommand}">Home</Button>

@@ -1,6 +1,6 @@
-﻿using Avalonia;
-using Avalonia.Controls;
+﻿using Avalonia.Controls;
 using Avalonia.Markup.Xaml;
+using AvalonWriter.ViewModels;
 
 namespace AvalonWriter.Views;
 
@@ -14,5 +14,6 @@ public partial class SettingsView : UserControl
     private void InitializeComponent()
     {
         AvaloniaXamlLoader.Load(this);
+        DataContext = new SettingsViewModel();
     }
 }
